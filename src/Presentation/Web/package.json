@@ -9,6 +9,7 @@
     "build-js": "bun build ./src/index.ts --outdir ./wwwroot/js",
     "build-css": "bunx tailwindcss -i ./src/app.css -o ./wwwroot/css/app.css",
     "watch": "bunx concurrently \"bun:watch-*\"",
+		"watch-dotnet": "dotnet watch run",
     "watch-js": "bun --watch build ./src/index.ts --outdir ./wwwroot/js",
     "watch-css": "bun run build-css --watch",
     "dev": "bun start",
